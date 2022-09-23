@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 10px;
 }
 
 :root {
@@ -75,23 +76,50 @@ main {
 
 #box-img {
     position: absolute;
-    bottom: 3.8rem;
-    right: 13rem;
+    top: 125px;
+    right: 210px;
 }
 
 .content {
     width: 50%;
+    gap: 1rem;
 }
-
+.content h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 .div-question {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0.7rem;
     border-bottom: 1px solid var(--ligth-grayish-blue);
+}
+.div-question section {
+    gap: 0.5rem;
+}
+
+.question {
+    font-size: 1.6rem;
+    font-weight: 300;
 }
 
 .answer {
     display: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.question:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.answer.active {
+    display: block;
+}
+
+.question.active {
+    font-weight: bold;
 }
 
 
