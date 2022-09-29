@@ -2,6 +2,7 @@ const question = document.querySelectorAll('.question');
 const answer = document.querySelectorAll('.answer');
 const section = document.querySelectorAll('section');
 const content = document.querySelector('.content');
+const boxQuestion = document.querySelectorAll('.box-question');
 
 function callback(event) {
     const target = event.target;
@@ -14,7 +15,7 @@ function callback(event) {
     target.classList.toggle('active');
 }
 
-question.forEach(item => {
+boxQuestion.forEach(item => {
     item.addEventListener('click', callback);
 
 });
